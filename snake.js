@@ -34,6 +34,8 @@ var snakeBody = [];
 //endgame
 var gameOver = false;
 
+var score = 0;
+
 window.onload = function(){
     board = document.getElementById("board");
     board.width = cols * boxSize;
@@ -93,6 +95,11 @@ function update(){
             alert("You ate yourself. Cannibalism is forbidden— Game over!")
         }
     }
+
+    context.font = "16px sans-serif";
+    context.fillText(score, 10, 10);
+
+    score = snakeBody.length;
 }
 
 function placeFood(){
