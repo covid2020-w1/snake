@@ -57,7 +57,7 @@ function update(){
     context.fillStyle = "black";
     context.fillRect(0, 0, board.width, board.height);
 
-    context.fillStyle = "red";
+    context.fillStyle = "purple";
     context.fillRect(foodX, foodY, boxSize, boxSize);
 
 
